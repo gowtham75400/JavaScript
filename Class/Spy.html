@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy Number</title>
+</head>
+<body>
+    <h1>Spy Number</h1>
+    <script>
+        function isSpyNumber(num) {
+            
+            let sumOfDigits = 0;
+            let productOfDigits = 1;
+            const strNum = num.toString();
+            
+            for (let char of strNum) { 
+                const digit = parseInt(char);
+                sumOfDigits += digit;
+                productOfDigits *= digit;
+            }
+            return sumOfDigits === productOfDigits;
+        }
+
+const number1 = 123;
+console.log(isSpyNumber(number1));
+
+    </script>
+</body>
+</html>

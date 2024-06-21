@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="branch">
+        <option value="select">select</option>
+    </select>
+
+    <p>Creating a map from an array:</p>
+
+<p id="demo"></p>
+
+    <script>
+
+        // arr = ['EEE','ECE','CSE']
+
+        // arr.forEach(val => {
+        //     let opt = document.createElement('option')
+        //     opt.textContent = val
+        //     opt.value = val;
+        //     document.getElementById('branch').appendChild(opt)
+        // })
+
+
+        // let arr = ['gowtham','navin','mani']
+
+        // arr.forEach(val =>{
+        //     let opt = document.createElement('option')
+        //     opt.textContent = val
+        //     opt.value = val
+        //     document.getElementById('branch').appendChild(opt)
+        // })
+
+
+        //find pos num
+
+        // let input = [1,-2,3,4,-4,0,-9]
+        
+        // input.forEach(val =>{
+        //     if(val >= 0){
+        //         console.log(val);
+        //     }
+        // })
+        // let greetheading = (name) => {
+        //     let heading = document.querySelector('h1')
+        //     heading.innerHTML = ('hello ' + name) 
+        // }
+
+        // let greet = callback => callback('Gowtham')
+
+        // console.log(greet(greetheading));
+
+
+    
+
+
+
+        //Map
+
+        // let usd = [22,44,55]
+
+        // let inr = usd.map(val => val*83)
+        // console.log(inr);
+
+        //As same as foreach 
+
+        // let  usdd = [22,44,55]
+
+        // usdd.forEach(val => {
+        //     let inr = val*83
+        // })
+
+        // console.log(inr);
+
+        // //reduce
+
+        // let arr = ["N","A","V","I","N",]
+
+        // let name = arr.reduce((na,el) => na+el).toLowerCase()
+        // console.log(name);
+
+
+        //Accmulated 
+
+
+        // let arr2d = [
+        //     ["a","b","c"],
+        //     ["c","b","a"],
+        //     ["b","b","d"]
+        // ]
+        
+        // let count = arr2d.flat().reduce(
+        //     (acc , currVal) => {
+        //     if(acc[currVal]){
+        //         acc[currVal]++
+        //     }else{
+        //         acc[currVal] = 1
+        //     }
+        //     return acc
+        // }
+        
+        
+        // ,{})
+
+        // console.log(count);
+
+        // function makeAdd(x){
+        //     return function(y){
+        //         return x+y
+        //     }
+        // }
+
+        // let add5 = makeAdd(5) //closure
+        // console.log(add5(100));
+
+
+        // Create a Map
+    //     let text = ''
+    // const fruits = new Map([
+    // ["apples1", 600],
+    // ["bananas", 300],
+    // ["oranges", 200]
+    // ]);
+
+    // fruits.set("apples",800)
+
+    // // let numb = fruits.get("apples1");
+    // // document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+
+
+    // fruits.forEach(function(key , val){
+    // text +=key +',' + val 
+    // })
+
+    // console.log(text);
+
+    // Map.gr
+
+    console.log(["1", "2", "3"].map((str) => parseInt(str, 10))); // [1, 2, 3]
+    </script>
+</body>
+</html>

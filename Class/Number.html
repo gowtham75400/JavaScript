@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Array Adder</title>
+</head>
+<body>
+    <h1>Add and Display Array Elements</h1>
+    
+    <input type="text" id="arrayInput" placeholder="Enter an element">
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="displayArray()">Display Elements</button>
+    
+    <ul id="arrayDisplay"></ul>
+    
+    <script>
+        // let array = [];
+
+        // function addElement() {
+        //     const input = document.getElementById('arrayInput').value;
+        //     let input2 = input.split(",");
+        //     if (input2) {
+        //         array.push(input2);
+        //         document.getElementById('arrayInput').value = '';
+        //     }
+        // }
+
+        // function displayArray() {
+        //     const display = document.getElementById('arrayDisplay');
+        //     display.innerHTML = '';
+        //     array.forEach(item => {
+        //         const li = document.createElement('li');
+        //         li.textContent = item;
+        //         display.appendChild(li);
+        //     });
+        // }
+
+//         let input = [1, 2, 2, 3, 4, 5, 3, 4];
+// let value = [];
+
+// input.forEach((item) => {
+//     if (!value.includes(item)) {
+//         value.push(item);
+//     }
+// });
+
+// function range(Firstvalue, iterable) {
+//     let output = [];
+//     for (let i = Firstvalue; i <= iterable; i ++) {
+//         if (output.length < iterable) {
+//             output.push(i);
+//         }
+//     }
+
+//     return output;
+// }
+
+// console.log(range(1, 10));
+
+
+function range (first , tolast){
+    let output = []
+    for(let i = first ; i <=tolast ; i++){
+    output.push(i)
+    }
+    return output
+}
+
+
+
+
+console.log(range(1,10));
+    </script>
+</body>
+</html>

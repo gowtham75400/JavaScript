@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+    Username:<br>
+    <input type="text" id="username" required><br>
+    Password:<br>
+    <input type="password" id="password" required><br>
+    Retype Password:<br>
+    <input type="password" id="retypePassword" required><br><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <script>
+    document.getElementById("myForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    
+    let password = document.getElementById("password").value;
+    let retypePassword = document.getElementById("retypePassword").value;
+    
+    if(password !== retypePassword) {
+        alert("Passwords do not match.");
+    } else {
+        alert("Form submitted successfully.");
+    }
+    });
+    </script>
+
+    </body>
+    </html>

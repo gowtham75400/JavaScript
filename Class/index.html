@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <title>Palindrome Number Checker</title> -->
+</head>
+<body>
+    <!-- <h1>Palindrome Number Checker</h1>
+    <p id="p1"></p> -->
+
+    <h1 id="value"></h1>
+
+    <script>
+        // var input = prompt("Enter the number: ");
+        // var rem, rev = 0, n = parseInt(input, 10);
+        // var originalNumber = n;
+
+        // if (isNaN(n)) {
+        //     document.getElementById("p1").innerHTML = "Invalid input! Please enter a valid number.";
+        // } else {
+        //     while (n > 0) {
+        //         rem = n % 10;
+        //         rev = rev * 10 + rem;
+        //         n = Math.floor(n / 10);
+        //     }
+
+        //     if (originalNumber === rev) {
+        //         document.getElementById("p1").innerHTML = `The number ${input} is a palindrome`;
+        //     } else {
+        //         document.getElementById("p1").innerHTML = `The number ${input} is not a palindrome.`;
+        //     }
+        // }
+
+        // let num1 = prompt("Enter a num1")
+        // let num2 = prompt("Enter a num2")
+        // let op = prompt("Give a op : + , - , * , /")
+
+        // switch(op){
+        //     case op == "+":
+        //         num1 + num2;
+        //         break;
+        //     case op == "-":
+        //         num1 - num2;
+        //         break;
+        //     case op == "*":
+        //         num1 * num2;
+        //         break;
+        //     case op == "/":
+        //         num1 / num2;
+        //         break;         
+        // }
+        // console.log(op)
+        // let result = Number(document.getElementById("value").value)
+        // result.innerHTML = `Value is ${op}`
+
+
+        //adding two numbrs using function
+        // let num1 = parseint(prompt("Enter a number 1 : "))
+        // let num2 = parseint(prompt("Enter a number 2 : "))
+
+        // function add(n1 , n2 ){
+        //     document.getElementById("p1").innerHTML += (n1+n2)
+        // }
+        // add(num1,num2)
+        
+
+
+        //tech number
+
+        function tech(number){
+            let str4 = number.toString();
+            let len = str4.length;
+            if(len==4){
+                let n1 = Math.floor(number/100);
+                let n2 = number%100;
+                let result = n1+n2;
+                if(result*result==number){
+                    console.log("tech number")
+                }
+                else{
+                    console.log("Not a valid Number")
+                }
+
+            }
+        }
+
+        let num = parseInt(prompt("enter the number :"));
+        tech(num);
+    </script>
+</body>
+</html>
